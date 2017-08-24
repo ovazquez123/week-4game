@@ -1,0 +1,46 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Crystals Collectors!</title>
+	<link rel="stylesheet" type="text/css" href="CrystalsCollectors.css">
+</head>
+<body>
+	
+	<div class="container">
+      <div class="header">
+
+        <h1>Crystals Collectors!</h1> 
+</div>
+
+    
+      <p> You will be given a random number at the start of the game. <p>
+      <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.<p>
+      <p> You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.<p>
+      <p> The value of each crystal is hidden from you until you click on it. <p>
+      <p> Each time when the game starts, the game will change the values of each crystal. <p>
+      
+      <div id="GameValue">
+      	Game Value: <span id="Total"></span>
+      </div>
+      <div id="Wins">
+        Total Wins: <span id="numWins"></span>
+      </div>
+      <div id="Losses">
+        Total Losses: <span id="numLosses"></span>
+      </div>
+      <div id="Tally">
+      	Tally: <span id="Sum"></span>
+      
+      <div class="container">
+      <button id="ruby" onclick="addRubyValue()">Ruby</button>
+      <button id="diamond" onclick="addDiamondValue()">Diamond</button>
+      <button id="amberJewel" onclick="addAmberJewelValue()">AmberJewel</button>
+      <button id="saphire" onclick="addSaphireValue()">Saphire</button>
+    </div>
+  
+  </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./Crystals.js"></script>
+</body>
+
+</html>
