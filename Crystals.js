@@ -30,16 +30,16 @@ $("#Total").html("rand");
 $("#numWins").html("totalWins");
 
 
-$("numLosses").html("totalLosses");
+$("#numLosses").html("totalLosses");
 
 
-$("Sum").html("tally");
+$("#Sum").html("tally");
 
 function addRubyValue (){
 	tally = tally + rubyValue;
-	$("Sum").html("tally");
+	$("#Sum").html("tally");
 	if (tally > rand) {
-	$("numLosses").html("totalLosses");
+	$("#numLosses").html("totalLosses");
 		totalLosses++;
 		
 		resetCrystalCollector()
@@ -55,10 +55,10 @@ function addRubyValue (){
 
 function addDiamondValue (){
 	tally = tally + diamondValue;
-	$("Sum").html("tally");
+	$("#Sum").html("tally");
 	if (tally > rand) {
 		totalLosses++;
-		$("numLosses").html("totalLosses");
+		$("#numLosses").html("totalLosses");
 
 		resetCrystalCollector()
 	}
@@ -73,10 +73,10 @@ function addDiamondValue (){
 
 function addAmberJewelValue (){
 	tally = tally + amberJewelValue;
-	$("Sum").html("tally");
+	$("#Sum").html("tally");
 	if (tally > rand) {
 		totalLosses++;
-		$("numLosses").html("totalLosses");
+		$("#numLosses").html("totalLosses");
 		resetCrystalCollector()
 	}
 		
@@ -90,10 +90,10 @@ function addAmberJewelValue (){
 
 function addSaphireValue (){
 	tally = tally + saphireValue;
-	$("Sum").html("tally");
+	$("#Sum").html("tally");
 	if (tally > rand) {
 		totalLosses++;
-		$("numLosses").html("totalLosses");
+		$("#numLosses").html("totalLosses");
 		resetCrystalCollector()
 	}
 		
@@ -117,7 +117,7 @@ function setupCrystalCollector () {
 	rand = Math.floor(Math.random() * 50) + 25;
 	$("#Total").html("rand");
 	tally = 0
-	$("Sum").html("tally");
+	$("#Sum").html("tally");
 
 	rubyValue = Math.floor(Math.random() * 25) + 1;
 		console.log(" rubyValue: " + rubyValue)
@@ -132,3 +132,5 @@ function setupCrystalCollector () {
 		console.log(" saphireValue: " + saphireValue)
 
 	console.log("Game Value: " + rand);
+
+}
